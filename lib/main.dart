@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Skechers',
       theme: ThemeData(
-primaryColor: Color(0xff0061BD),
+
 
       ),
       home:SplashScreen(),
