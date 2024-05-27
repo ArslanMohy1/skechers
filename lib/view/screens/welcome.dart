@@ -39,7 +39,7 @@ class _IntroScreenState extends State<IntroScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white, // Set background color
+      // backgroundColor: Colors.white, // Set background color
       body: Column(
 
         children: [
