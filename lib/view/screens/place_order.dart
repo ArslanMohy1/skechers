@@ -127,7 +127,7 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        // backgroundColor: Colors.white,
+        backgroundColor: Colors.white,
         body: Form(
           key: _formKey,
           child: Padding(
