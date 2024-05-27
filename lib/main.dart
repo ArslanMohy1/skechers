@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:skechers/view/screens/splash.dart';
-import 'package:skechers/view/screens/sub_catagories.dart';
 
 void main() {
   SystemChrome.setPreferredOrientations([
@@ -21,10 +20,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Skechers',
-      theme: ThemeData(
 
-
-      ),
       home:SplashScreen(),
     );
   }
