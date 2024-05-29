@@ -194,7 +194,7 @@ class _ProductDetailState extends State<ProductDetail> {
             ShoeSizeSelector(
               onSelectSize: (size) {
                 selectedSize = size;
-              },
+              }, availableSizes: ['7','5','12','14'],
             ),
             Padding(
               padding: EdgeInsets.only(left: 10.0),

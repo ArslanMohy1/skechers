@@ -27,11 +27,11 @@ class _SettingScreenState extends State<SettingScreen> {
           automaticallyImplyLeading: false,
           title: Text('Setting',style: GoogleFonts.inter(fontSize: 15,fontWeight: FontWeight.bold,color: Color(kcolor)),),
         ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Expanded(
-              child: Container(
+        body: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Container(
                 padding: EdgeInsets.all(20),
                 child: Column(
 
@@ -128,10 +128,10 @@ class _SettingScreenState extends State<SettingScreen> {
 
                   ],
                 ),
-              ),
-            )
+              )
 
-          ],
+            ],
+          ),
         ),
 
       ),

@@ -42,6 +42,7 @@ SizedBox(height: Get.height*0.05,),
                 }
 
                 return ListView.builder(
+                  padding: EdgeInsets.zero,
                   itemCount: controller.orders.length,
                   itemBuilder: (context, index) {
                     Order order = controller.orders[index];
@@ -59,7 +60,7 @@ SizedBox(height: Get.height*0.05,),
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text('Price: \$${order.price}'),
-                              Text('Size: \$${order.size}'),
+                              Text('Size: ${order.size}'),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                                 children: [

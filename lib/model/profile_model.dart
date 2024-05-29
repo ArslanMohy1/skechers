@@ -3,7 +3,7 @@ class ProfileModel {
   final String name;
   final String email;
   final String phoneNumber;
-  final String address;
+  late final String address;
   final String? imagePath; // Store the path to the profile image
 
   ProfileModel({

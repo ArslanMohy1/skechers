@@ -81,6 +81,7 @@ flutter:
     - assets/intro1.png
     - assets/intro2.png
     - assets/catagories/
+    - assets/star.png
 
 
   #   - images/a_dot_ham.jpeg

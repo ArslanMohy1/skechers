@@ -9,6 +9,7 @@ import 'package:skechers/view/screens/catagory.dart';
 import 'package:skechers/view/screens/homepage.dart';
 import 'package:skechers/view/screens/order_screen.dart';
 import 'package:skechers/view/screens/profile.dart';
+import 'package:skechers/view/screens/reward.dart';
 import 'package:skechers/view/screens/setting_screen.dart';
 import 'package:skechers/view/utils/constant.dart';
 class BottomBar extends StatefulWidget {
@@ -25,6 +26,7 @@ class _BottomBarState extends State<BottomBar> {
     HomePage(),
     Catagories(),
     OrderScreen(),
+    RewardScreen(),
    SettingScreen(),
   ];
   int _page = 0;
@@ -68,6 +70,10 @@ class _BottomBarState extends State<BottomBar> {
             CurvedNavigationBarItem(
               child: Icon(CupertinoIcons.bag_fill,color: Color(kcolor),),
               label: 'Orders',
+            ),
+            CurvedNavigationBarItem(
+              child: Icon(Icons.star,color: Color(kcolor),),
+              label: 'Reward',
             ),
             CurvedNavigationBarItem(
               child: Icon(Icons.settings,color: Color(kcolor),),

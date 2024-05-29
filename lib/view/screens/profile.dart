@@ -176,4 +176,10 @@ class _ProfileState extends State<Profile> {
       style: TextStyle(color: Colors.black),
     );
   }
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+
+  }
 }

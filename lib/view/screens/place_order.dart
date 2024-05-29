@@ -210,7 +210,7 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
 
                           onChanged: (value) {
                            shippingAddress = value;
-
+                           _updateShippingAddress(value);
                           },
                         ),
                         SizedBox(height: Get.height*0.01,),
@@ -431,6 +431,14 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen> {
         ),
       ),
     );
+  }
+  void _updateShippingAddress(String address) async {
+    // Update shipping address in the database
+    final profile = await _dbHelper.getProfile();
+    if (profile != null) {
+      profile.address = address;
+      await _dbHelper.updateProfile(profile);
+    }
   }
 }
 
